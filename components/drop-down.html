@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú Desplegable Accesible</title>
+<style>
+
+/* Estilos para el icono del menú */
+.menu-icon {
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+}
+
+/* Estilos adicionales para los trazos */
+.menu-icon::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+  margin-top: 8px; /* Espacio entre los trazos */
+}
+
+.menu-icon::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+  margin-top: 10px; /* Espacio entre los trazos */
+}
+
+  
+/* Estilos para el contenedor del menú */
+.menu {
+  position: relative;
+  display: inline-block;
+
+}
+
+/* Estilos para el botón del menú */
+.menu-btn {
+  background-color: #FFA700;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+/* Estilos para la lista desplegable */
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  border: 1px solid #000;
+}
+
+/* Estilos para los elementos de la lista desplegable */
+.menu-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid #000;
+}
+
+
+.menu-content a:focus {
+  background-color: #FFA700; /* Cambia el color de fondo cuando se enfoca */
+  outline: none; /* Elimina el contorno de enfoque predeterminado */
+}
+
+/* Muestra el menú desplegable cuando el botón se enfoca */
+.menu:focus-within .menu-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+<h1>Menú Desplegable Accesible</h1>
+
+<!-- Contenedor del menú -->
+<div class="menu" tabindex="0" aria-label="Desplegable para filtrar productos en venta">
+  <!-- Botón del menú -->
+  <button class="menu-btn">Menú</button>
+  <!-- Contenido del menú desplegable -->
+  <div class="menu-content">
+    <a href="#">Ver productos de 0-5€ 1</a>
+    <a href="#">Ver productos de 5-10€</a>
+    <a href="#">Ver productos de más de 10€</a>
+    <a href="#">Ver productos a menos de 1km</a>
+
+  </div>
+</div>
+
+
+<p>Desplegable de ejemplo para ilustrar la accesibilidad del prototipo MealMatesU</p>
+
+<!-- Icono de menú desplegable -->
+<span class="menu-icon"></span>
+
+</body>
+</html>
