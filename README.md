@@ -2,12 +2,12 @@
 
 Prototipo de la pagina web de la UYA.
 
-- [ ] Colores
-- [ ] Espacios apartados
-- [ ] Espacios footer
-- [ ] Borrar nuevos productos
-- [ ] Elige que quieres hacer iconos negro y fondo amarillo palido
-- [ ] Estrella arreglar tamaño
-- [ ] Espacios en producto
-- [ ] Titulo copiar del figma
-- [ ] "X" para salir del producto
+- [x] Colores
+- [x] Espacios apartados
+- [x] Espacios footer
+- [x] Borrar nuevos productos
+- [x] Elige que quieres hacer iconos negro y fondo amarillo palido
+- [x] Estrella arreglar tamaño
+- [x] Espacios en producto
+- [x] Titulo copiar del figma
+- [x] "X" para salir del producto
